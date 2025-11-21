@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Товар 1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+    }
+    .product-page {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .gallery {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      overflow-x: auto;
+    }
+    .gallery img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .main-image {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      margin: 0 0 10px 0;
+    }
+    p {
+      line-height: 1.5;
+    }
+    .back-button {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 8px 12px;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Каталог товаров
+  </header>
+
+  <div class="product-page">
+    <a href="index.html" class="back-button">← Назад к каталогу</a>
+
+    <img src="https://via.placeholder.com/800x400" alt="Товар 1" class="main-image" id="mainImage">
+
+    <div class="gallery">
+      <img src="https://via.placeholder.com/200x150" alt="Товар 1-1" onclick="changeImage(this.src)">
+      <img src="https://via.placeholder.com/200x150/ff9999" alt="Товар 1-2" onclick="changeImage(this.src)">
+      <img src="https://via.placeholder.com/200x150/99ff99" alt="Товар 1-3" onclick="changeImage(this.src)">
+    </div>
+
+    <h2>Товар 1</h2>
+    <p>
+      Подробное описание товара. Здесь можно указать характеристики, материалы, размеры и любую другую информацию, которая поможет клиенту принять решение о покупке.
+    </p>
+  </div>
+
+  <footer>
+    Контакты: <br>
+    Телефон: +7 123 456-78-90 <br>
+    Email: info@yourshop.ru
+  </footer>
+
+  <script>
+    function changeImage(src) {
+      document.getElementById('mainImage').src = src;
+    }
+  </script>
+
+</body>
+</html>
+

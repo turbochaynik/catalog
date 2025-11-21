@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог товаров</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .product {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+    }
+    .product img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .product h3 {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Каталог товаров
+  </header>
+
+  <div class="container">
+    <div class="product" onclick="location.href='product1.html'">
+      <img src="https://via.placeholder.com/200x150" alt="Товар 1">
+      <h3>Товар 1</h3>
+    </div>
+    <div class="product" onclick="location.href='product2.html'">
+      <img src="https://via.placeholder.com/200x150" alt="Товар 2">
+      <h3>Товар 2</h3>
+    </div>
+    <div class="product" onclick="location.href='product3.html'">
+      <img src="https://via.placeholder.com/200x150" alt="Товар 3">
+      <h3>Товар 3</h3>
+    </div>
+    <div class="product" onclick="location.href='product4.html'">
+      <img src="https://via.placeholder.com/200x150" alt="Товар 4">
+      <h3>Товар 4</h3>
+    </div>
+  </div>
+
+  <footer>
+    Контакты: <br>
+    Телефон: +7 123 456-78-90 <br>
+    Email: info@yourshop.ru
+  </footer>
+
+</body>
+</html>
+
